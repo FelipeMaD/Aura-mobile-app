@@ -1,15 +1,7 @@
 [
     {
-        "merged": "com.example.auraapp-debug-4:/xml_backup_rules.xml.flat",
-        "source": "com.example.auraapp-main-6:/xml/backup_rules.xml"
-    },
-    {
         "merged": "com.example.auraapp-debug-4:/drawable_image.png.flat",
         "source": "com.example.auraapp-main-6:/drawable/image.png"
-    },
-    {
-        "merged": "com.example.auraapp-debug-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.auraapp-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
         "merged": "com.example.auraapp-debug-4:/mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -20,32 +12,64 @@
         "source": "com.example.auraapp-main-6:/drawable/image__2_.png"
     },
     {
-        "merged": "com.example.auraapp-debug-4:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.auraapp-main-6:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.auraapp-debug-4:/drawable_casa.xml.flat",
+        "source": "com.example.auraapp-main-6:/drawable/casa.xml"
     },
     {
-        "merged": "com.example.auraapp-debug-4:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.auraapp-main-6:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.auraapp-debug-4:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.auraapp-main-6:/mipmap-mdpi/ic_launcher.webp"
     },
     {
         "merged": "com.example.auraapp-debug-4:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.auraapp-main-6:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.auraapp-debug-4:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.auraapp-main-6:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.auraapp-debug-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.auraapp-main-6:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.auraapp-debug-4:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.auraapp-main-6:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.auraapp-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.auraapp-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.auraapp-debug-4:/drawable_vector.png.flat",
+        "source": "com.example.auraapp-main-6:/drawable/vector.png"
+    },
+    {
+        "merged": "com.example.auraapp-debug-4:/xml_backup_rules.xml.flat",
+        "source": "com.example.auraapp-main-6:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.auraapp-debug-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.auraapp-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.auraapp-debug-4:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.auraapp-main-6:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
         "merged": "com.example.auraapp-debug-4:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "com.example.auraapp-main-6:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.auraapp-debug-4:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.auraapp-main-6:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.example.auraapp-debug-4:/drawable_halter.xml.flat",
+        "source": "com.example.auraapp-main-6:/drawable/halter.xml"
     },
     {
         "merged": "com.example.auraapp-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "com.example.auraapp-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.auraapp-debug-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.auraapp-main-6:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.auraapp-debug-4:/drawable_user.xml.flat",
+        "source": "com.example.auraapp-main-6:/drawable/user.xml"
     },
     {
         "merged": "com.example.auraapp-debug-4:/mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -64,20 +88,12 @@
         "source": "com.example.auraapp-main-6:/drawable/image__1_.png"
     },
     {
-        "merged": "com.example.auraapp-debug-4:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.auraapp-main-6:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.example.auraapp-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.auraapp-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.auraapp-debug-4:/drawable_lupa.xml.flat",
+        "source": "com.example.auraapp-main-6:/drawable/lupa.xml"
     },
     {
         "merged": "com.example.auraapp-debug-4:/drawable_component_1.png.flat",
         "source": "com.example.auraapp-main-6:/drawable/component_1.png"
-    },
-    {
-        "merged": "com.example.auraapp-debug-4:/drawable_vector.png.flat",
-        "source": "com.example.auraapp-main-6:/drawable/vector.png"
     },
     {
         "merged": "com.example.auraapp-debug-4:/xml_data_extraction_rules.xml.flat",

@@ -4,6 +4,7 @@ package com.example.auraapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.annotation.DrawableRes
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -19,6 +20,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.ElevatedButton
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -220,7 +222,7 @@ fun Home(
     Column (
         modifier = Modifier
             .fillMaxSize()
-            .padding(horizontal = 16.dp)
+            .padding(horizontal = 0.dp)
     ){
         Row (
             verticalAlignment = Alignment.CenterVertically,
@@ -313,9 +315,52 @@ fun Home(
             }
         }
 
+        BottomNavigationBar()
+
 
     }
 
+}
+@Composable
+fun BottomNavigationBar() {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+    ) {
+        Row(
+            horizontalArrangement = Arrangement.SpaceBetween,
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color(0xFFF79000))
+                .padding(16.dp) // Padding para os ícones
+                .align(Alignment.BottomCenter)
+        ) {
+            // Ícones SVG
+            IconButton(onClick = { /* Ação para o primeiro ícone */ }) {
+                SvgIcon(R.drawable.casa)
+            }
+            IconButton(onClick = { /* Ação para o segundo ícone */ }) {
+                SvgIcon(R.drawable.lupa)
+            }
+            IconButton(onClick = { /* Ação para o terceiro ícone */ }) {
+                SvgIcon(R.drawable.halter)
+            }
+            IconButton(onClick = { /* Ação para o quarto ícone */ }) {
+                SvgIcon(R.drawable.user)
+            }
+        }
+    }
+}
+
+// Função para carregar o SVG
+@Composable
+fun SvgIcon(@DrawableRes iconId: Int, modifier: Modifier = Modifier) {
+    Image(
+        painter = painterResource(id = iconId),
+        contentDescription = null,
+        modifier = modifier
+            .size(24.dp) // Tamanho do ícone
+    )
 }
 
 @Composable
@@ -380,3 +425,4 @@ fun showimg3(
             .height(150.dp)
     )
 }
+
