@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.MaterialTheme
@@ -173,10 +174,16 @@ val endOffset = if(isVerticalGradient){
 fun Greeting(
     userName: String,
     modifier: Modifier = Modifier
-        .padding(16.dp, 8.dp)
 
 ){
-    Text("Seja bem vindo, $userName")
+    Text("Seja bem vindo, $userName",
+        color = Color.White,
+        fontWeight = FontWeight.Bold,
+        fontSize = 17.sp,
+        modifier = Modifier
+            .padding(16.dp,32.dp)
+
+    )
 }
 
 @Preview(showBackground = true, widthDp = 280)
@@ -201,6 +208,7 @@ fun Home(
     )
 
     Box(
+
         modifier = modifier
             .fillMaxSize()
             .background(brush = GradientBackgroundBrush(
@@ -210,21 +218,102 @@ fun Home(
             ))
     )
     Column (
-
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 16.dp)
     ){
         Row (
             verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp, 8.dp)
+
+
 
 
         ){
             showLogo()
             showSideBar()
         }
-
         Greeting("João")
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 16.dp), // Espaçamento entre o Greeting e a imagem
+            contentAlignment = Alignment.Center // Centraliza a imagem horizontalmente
+        ) {
+            Box(
+                modifier = Modifier
+                    .width(250.dp)
+                    .height(150.dp)
+            ) {
+                showimg1(Modifier.fillMaxSize()) // Chama a imagem
+
+                // Texto posicionado no canto inferior esquerdo da imagem
+                Text(
+                    text = "Grupos Musculares",
+                    color = Color.White,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                        .align(Alignment.BottomStart) // Texto no canto inferior esquerdo
+                        .padding(8.dp, 35.dp) // Espaçamento do texto dentro da imagem
+                )
+            }
+        }
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 16.dp), // Espaçamento entre o Greeting e a imagem
+            contentAlignment = Alignment.Center // Centraliza a imagem horizontalmente
+        ) {
+            Box(
+                modifier = Modifier
+                    .width(250.dp)
+                    .height(150.dp)
+            ) {
+                showimg2(Modifier.fillMaxSize()) // Chama a imagem
+
+                // Texto posicionado no canto inferior esquerdo da imagem
+                Text(
+                    text = "Meus treinos",
+                    color = Color.White,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                        .align(Alignment.BottomStart) // Texto no canto inferior esquerdo
+                        .padding(8.dp, 35.dp) // Espaçamento do texto dentro da imagem
+                )
+            }
+        }
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 16.dp), // Espaçamento entre o Greeting e a imagem
+            contentAlignment = Alignment.Center // Centraliza a imagem horizontalmente
+        ) {
+            Box(
+                modifier = Modifier
+                    .width(250.dp)
+                    .height(150.dp)
+            ) {
+                showimg3(Modifier.fillMaxSize()) // Chama a imagem
+
+                // Texto posicionado no canto inferior esquerdo da imagem
+                Text(
+                    text = "Mobilidade",
+                    color = Color.White,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                        .align(Alignment.BottomStart) // Texto no canto inferior esquerdo
+                        .padding(8.dp, 35.dp) // Espaçamento do texto dentro da imagem
+                )
+            }
+        }
+
+
     }
 
 }
@@ -250,5 +339,44 @@ fun showSideBar(
         modifier = Modifier
             .width(22.dp)
             .height(22.dp)
+    )
+}
+@Composable
+fun showimg1(
+    modifier: Modifier = Modifier
+){
+    Image(
+
+        painter = painterResource(id = R.drawable.image),
+        contentDescription = "imagem1",
+        modifier = Modifier
+            .width(250.dp)
+            .height(150.dp)
+    )
+}
+@Composable
+fun showimg2(
+    modifier: Modifier = Modifier
+){
+    Image(
+
+        painter = painterResource(id = R.drawable.image__1_),
+        contentDescription = "imagem2",
+        modifier = Modifier
+            .width(250.dp)
+            .height(150.dp)
+    )
+}
+@Composable
+fun showimg3(
+    modifier: Modifier = Modifier
+){
+    Image(
+
+        painter = painterResource(id = R.drawable.image__2_),
+        contentDescription = "imagem3",
+        modifier = Modifier
+            .width(250.dp)
+            .height(150.dp)
     )
 }
