@@ -170,7 +170,12 @@ val endOffset = if(isVerticalGradient){
 }
 
 @Composable
-fun Greeting(userName: String, modifier: Modifier = Modifier){
+fun Greeting(
+    userName: String,
+    modifier: Modifier = Modifier
+        .padding(16.dp, 8.dp)
+
+){
     Text("Seja bem vindo, $userName")
 }
 
@@ -204,8 +209,17 @@ fun Home(
 
             ))
     )
-    Column {
-        Row {
+    Column (
+
+    ){
+        Row (
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp, 8.dp)
+
+
+        ){
             showLogo()
             showSideBar()
         }
@@ -222,14 +236,15 @@ fun showLogo(
         painter = painterResource(id = R.drawable.component_1),
         contentDescription = "logo",
         modifier = Modifier
-            .width(30.dp)
-            .height(30.dp)
+            .width(38.dp)
+            .height(38.dp)
     )
 }
 @Composable
 fun showSideBar(
 ){
     Image(
+
         painter = painterResource(id = R.drawable.vector),
         contentDescription = "menu lateral",
         modifier = Modifier
