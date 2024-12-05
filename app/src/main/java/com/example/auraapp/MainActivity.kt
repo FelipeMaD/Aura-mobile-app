@@ -4,6 +4,7 @@ package com.example.auraapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.annotation.DrawableRes
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -45,17 +46,13 @@ import com.example.auraapp.ui.theme.AuraTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       // enableEdgeToEdge()
+        enableEdgeToEdge()
 //        setContent {
-////            AuraTheme {
-////                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-////                    Greeting(
-////                        name = "Android",
-////                        modifier = Modifier.padding(innerPadding)
-////                    )
-////                }
+//            AuraTheme {
+//                AuraApp()
+//                }
 //            }
-        }
+//        }
     }
 
 
@@ -183,7 +180,7 @@ fun Greeting(
         fontWeight = FontWeight.Bold,
         fontSize = 17.sp,
         modifier = Modifier
-            .padding(16.dp,32.dp)
+            .padding(16.dp,20.dp)
 
     )
 }
@@ -229,10 +226,7 @@ fun Home(
             horizontalArrangement = Arrangement.SpaceBetween,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp, 8.dp)
-
-
-
+                .padding(16.dp, 50.dp, 15.dp)
 
         ){
             showLogo()
@@ -424,5 +418,6 @@ fun showimg3(
             .width(250.dp)
             .height(150.dp)
     )
+}
 }
 
