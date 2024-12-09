@@ -47,12 +47,12 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-//        setContent {
-//            AuraTheme {
-//                AuraApp()
-//                }
-//            }
-//        }
+        setContent {
+            AuraTheme {
+                AuraApp()
+                }
+            }
+        }
     }
 
 
@@ -185,7 +185,9 @@ fun Greeting(
     )
 }
 
-@Preview(showBackground = true, widthDp = 280)
+
+//widthpadrao: 280 , width e height felipe: 280, 622, w e h celular joao: 392, 850
+@Preview(showBackground = true, widthDp = 392, heightDp = 850)
 @Composable
 fun AuraPreview(){
     AuraApp()
@@ -241,7 +243,6 @@ fun Home(
         ) {
             Box(
                 modifier = Modifier
-                    .width(250.dp)
                     .height(150.dp)
             ) {
                 showimg1(Modifier.fillMaxSize()) // Chama a imagem
@@ -266,7 +267,6 @@ fun Home(
         ) {
             Box(
                 modifier = Modifier
-                    .width(250.dp)
                     .height(150.dp)
             ) {
                 showimg2(Modifier.fillMaxSize()) // Chama a imagem
@@ -291,7 +291,6 @@ fun Home(
         ) {
             Box(
                 modifier = Modifier
-                    .width(250.dp)
                     .height(150.dp)
             ) {
                 showimg3(Modifier.fillMaxSize()) // Chama a imagem
@@ -389,8 +388,8 @@ fun showimg1(
         painter = painterResource(id = R.drawable.image),
         contentDescription = "imagem1",
         modifier = Modifier
-            .width(250.dp)
-            .height(150.dp)
+            .width(280.dp)
+            .height(180.dp)
     )
 }
 @Composable
@@ -402,7 +401,7 @@ fun showimg2(
         painter = painterResource(id = R.drawable.image__1_),
         contentDescription = "imagem2",
         modifier = Modifier
-            .width(250.dp)
+            .width(280.dp)
             .height(150.dp)
     )
 }
@@ -415,9 +414,9 @@ fun showimg3(
         painter = painterResource(id = R.drawable.image__2_),
         contentDescription = "imagem3",
         modifier = Modifier
-            .width(250.dp)
+            .width(280.dp)
             .height(150.dp)
     )
 }
-}
+
 
