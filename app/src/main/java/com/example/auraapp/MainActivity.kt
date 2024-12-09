@@ -20,6 +20,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -187,11 +189,77 @@ fun Greeting(
 }
 
 @Composable
-@Preview(showBackground = true, widthDp = 280)
+@Preview(showBackground = true, widthDp = 280, heightDp = 622)
 fun LoginCadastroScreen(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier, 
+    aoClicar()
 ){
+    Box(
 
+        modifier = Modifier.fillMaxSize()
+    ){
+        showimgBGInicio()
+        Column (
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(0.dp, 80.dp)
+        )
+        {
+            showimgLogoInicio()
+        }
+        Column (
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center,
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(0.dp, 100.dp)
+        ){
+            ElevatedButton(
+                onClick = {},
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFFFFA500),
+                    contentColor = Color.White
+                ),
+                shape = RoundedCornerShape(8.dp),
+                modifier = Modifier
+                    .padding(0.dp, 10.dp)) {
+                Text(
+                    text = "Login",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 17.sp,
+                    modifier = Modifier
+                        .padding(30.dp, 6.dp)
+
+                    )
+            }
+            ElevatedButton(
+                onClick = {},
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFFFFA500), // Cor de fundo laranja
+                    contentColor = Color.White // Cor do texto branca
+                ),
+                shape = RoundedCornerShape(8.dp),
+                modifier = Modifier
+
+                    .padding(0.dp, 10.dp))
+
+
+            {
+                Text(
+                    text = "Cadastro",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 17.sp,
+                    modifier = Modifier
+                        .padding(15.dp, 6.dp)
+                )
+
+
+            }
+        }
+
+
+    }
 }
 //@Preview(showBackground = true, widthDp = 280)
 @Composable
@@ -434,3 +502,31 @@ fun showimg3(
 }
 }
 
+@Composable
+fun showimgBGInicio(
+    modifier: Modifier = Modifier
+){
+    Image(
+
+        painter = painterResource(id = R.drawable.fundotelaini),
+        contentDescription = "imagem3",
+        modifier = Modifier
+            .fillMaxSize()
+
+    )
+}
+
+@Composable
+fun showimgLogoInicio(
+    modifier: Modifier = Modifier
+){
+    Image(
+
+        painter = painterResource(id = R.drawable.logoinicio),
+        contentDescription = "imagem3",
+        modifier = Modifier
+            .width(120.dp)
+            .height(120.dp)
+
+    )
+}

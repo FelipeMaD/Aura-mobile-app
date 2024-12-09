@@ -1,27 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.auraapp-mergeDebugResources-2:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "com.example.auraapp-mergeDebugResources-42:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\JoãoNot\\.gradle\\caches\\transforms-4\\447bcc80ee2482e14a5509f64d66a54e\\transformed\\core-1.13.1\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\felip\\.gradle\\caches\\8.9\\transforms\\a0f6e2de4a70d571050f3ecb9d7eda35\\transformed\\foundation-release\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,151,253,352,451,555,658,774",
-                        "endColumns": "95,101,98,98,103,102,115,100",
-                        "endOffsets": "146,248,347,446,550,653,769,870"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,141",
+                        "endColumns": "85,84",
+                        "endOffsets": "136,221"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,79",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,201,303,402,501,605,708,7993",
-                        "endColumns": "95,101,98,98,103,102,115,100",
-                        "endOffsets": "196,298,397,496,600,703,819,8089"
+                        "startLines": "83,84",
+                        "startColumns": "4,4",
+                        "startOffsets": "8358,8444",
+                        "endColumns": "85,84",
+                        "endOffsets": "8439,8524"
                     }
                 },
                 {
-                    "source": "C:\\Users\\JoãoNot\\.gradle\\caches\\transforms-4\\86b1bf36af0d3e6dc7c1a08b30e8c766\\transformed\\material3-release\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\felip\\.gradle\\caches\\8.9\\transforms\\5b00d7fb494d70b02df953093d948777\\transformed\\material3-release\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\JoãoNot\\.gradle\\caches\\transforms-4\\177d7cdc37b5a8811fddbd9fef0dc609\\transformed\\ui-release\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\felip\\.gradle\\caches\\8.9\\transforms\\92111fc089655d00325784c2f2adb2c2\\transformed\\ui-release\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,20 +55,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\JoãoNot\\.gradle\\caches\\transforms-4\\4f07d8e11d73fb643fa0bab10d4ba0c2\\transformed\\foundation-release\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\felip\\.gradle\\caches\\8.9\\transforms\\1cb3aeef7544eaf45f42efb645361f7b\\transformed\\core-1.13.1\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,141",
-                        "endColumns": "85,84",
-                        "endOffsets": "136,221"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,253,352,451,555,658,774",
+                        "endColumns": "95,101,98,98,103,102,115,100",
+                        "endOffsets": "146,248,347,446,550,653,769,870"
                     },
                     "to": {
-                        "startLines": "83,84",
-                        "startColumns": "4,4",
-                        "startOffsets": "8358,8444",
-                        "endColumns": "85,84",
-                        "endOffsets": "8439,8524"
+                        "startLines": "2,3,4,5,6,7,8,79",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,201,303,402,501,605,708,7993",
+                        "endColumns": "95,101,98,98,103,102,115,100",
+                        "endOffsets": "196,298,397,496,600,703,819,8089"
                     }
                 }
             ]

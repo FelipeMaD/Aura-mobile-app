@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.auraapp-mergeDebugResources-2:/values-v21/values-v21.xml",
+            "outputFile": "com.example.auraapp-mergeDebugResources-42:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\JoãoNot\\.gradle\\caches\\transforms-4\\447bcc80ee2482e14a5509f64d66a54e\\transformed\\core-1.13.1\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\felip\\.gradle\\caches\\8.9\\transforms\\1cb3aeef7544eaf45f42efb645361f7b\\transformed\\core-1.13.1\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

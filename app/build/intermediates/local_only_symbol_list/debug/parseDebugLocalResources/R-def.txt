@@ -9,12 +9,14 @@ color teal_700
 color white
 drawable casa
 drawable component_1
+drawable fundotelaini
 drawable halter
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable image
 drawable image__1_
 drawable image__2_
+drawable logoinicio
 drawable lupa
 drawable user
 drawable vector
