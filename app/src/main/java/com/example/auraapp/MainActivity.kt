@@ -191,8 +191,7 @@ fun Greeting(
 @Composable
 @Preview(showBackground = true, widthDp = 280, heightDp = 622)
 fun LoginCadastroScreen(
-    modifier: Modifier = Modifier, 
-    aoClicar()
+    modifier: Modifier = Modifier
 ){
     Box(
 
