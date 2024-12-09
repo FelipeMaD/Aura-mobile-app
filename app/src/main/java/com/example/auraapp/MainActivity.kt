@@ -175,6 +175,7 @@ fun Greeting(
     modifier: Modifier = Modifier
 
 ){
+
     Text("Seja bem vindo, $userName",
         color = Color.White,
         fontWeight = FontWeight.Bold,
@@ -185,7 +186,14 @@ fun Greeting(
     )
 }
 
+@Composable
 @Preview(showBackground = true, widthDp = 280)
+fun LoginCadastroScreen(
+    modifier: Modifier = Modifier
+){
+
+}
+//@Preview(showBackground = true, widthDp = 280)
 @Composable
 fun AuraPreview(){
     AuraApp()
@@ -200,6 +208,11 @@ fun AuraApp(){
 fun Home(
     modifier: Modifier = Modifier
 ){
+
+    var ocultado by remember {
+        mutableStateOf(true)
+    }
+
     val gradientColors = listOf(
         Color(0xFF373737),
         Color(0xFF1C2128)
